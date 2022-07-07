@@ -38,11 +38,13 @@ struct TokamakPathIssueApp: App {
 }
 
 struct ContentView: View {
+  
+  // Issue seems independent of whether Fiber Reconciler is used or not.
 #if os(WASI)
-  static let _configuration: _AppConfiguration = .init(
-     // Specify `useDynamicLayout` to enable the layout steps in place of CSS approximations.
-     reconciler: .fiber(useDynamicLayout: true)
-   )
+//  static let _configuration: _AppConfiguration = .init(
+//     // Specify `useDynamicLayout` to enable the layout steps in place of CSS approximations.
+//     reconciler: .fiber(useDynamicLayout: true)
+//   )
 #endif
   
   let model = Model.shared

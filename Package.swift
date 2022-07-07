@@ -16,7 +16,7 @@ let package = Package(
             targets: ["TokamakPathIssueApp"]),
     ],
     dependencies: [
-      .package(url: "https://github.com/TokamakUI/Tokamak.git", revision: "b1d358aabbbd9099cddcb41772c9456308904720"),
+      .package(url: "https://github.com/TokamakUI/Tokamak.git", branch: "main"),
       .package(url: "https://github.com/swiftwasm/JavaScriptKit.git", from: "0.15.0")
     ],
     targets: [
